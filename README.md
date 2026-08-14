@@ -57,6 +57,9 @@ A full-stack fashion e-commerce web application built using the MERN stack. User
 
 <img width="1891" height="889" alt="Cart" src="https://github.com/user-attachments/assets/ff30808d-8ba5-43e1-ba72-44d1be8bd193" />
 
+### Delivery Information
+
+<img width="1899" height="891" alt="Delivery" src="https://github.com/user-attachments/assets/b09b5fc3-79d0-419a-a928-4654f606905f" />
 
 ### Register
 
