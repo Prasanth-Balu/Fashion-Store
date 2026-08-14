@@ -1,0 +1,57 @@
+.admin-orders {
+    width: 100%;
+}
+
+.admin-orders-title {
+    margin: 0 0 25px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.admin-order-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.admin-order-card:hover {
+    box-shadow: 0 8px 20px rgba(179, 25, 66, 0.1);
+}
+
+.admin-order-card h3 {
+    margin: 0 0 18px;
+    font-size: 17px;
+    color: #1a1a1a;
+    word-break: break-all;
+}
+
+.admin-order-card p {
+    margin: 8px 0;
+    color: #444;
+}
+
+.admin-order-card select {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.admin-order-card select:focus {
+    border-color: #B31942;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .admin-orders-title { font-size: 26px; }
+    .admin-order-card { padding: 18px; }
+    .admin-order-card select { width: 100%; }
+}

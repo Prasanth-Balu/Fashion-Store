@@ -1,0 +1,29 @@
+.admin-dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f4f2;
+}
+
+.admin-dashboard-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#admin-welcome-title {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-top: 300px
+}
+
+@media (max-width: 768px) {
+    .admin-dashboard-content { padding: 25px 20px; }
+}
+
+@media (max-width: 480px) {
+    .admin-dashboard-content { padding: 20px 15px; }
+}

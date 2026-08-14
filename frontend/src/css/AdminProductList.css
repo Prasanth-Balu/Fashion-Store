@@ -1,0 +1,169 @@
+.admin-product-list {
+    width: 100%;
+}
+
+.admin-product-list-title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+.admin-product-empty {
+    color: #666;
+}
+
+.admin-product-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.admin-product-card:hover {
+    box-shadow: 0 8px 20px rgba(179, 25, 66, 0.1);
+}
+
+.admin-product-image {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    grid-row: span 6;
+}
+
+.admin-product-name {
+    margin: 0;
+    font-size: 19px;
+    color: #1a1a1a;
+}
+
+.admin-product-category {
+    margin: 0;
+    color: #B31942;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.admin-product-price {
+    margin: 0;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.admin-product-stock {
+    margin: 0;
+    color: #555;
+}
+
+.admin-edit-btn,
+.admin-delete-btn {
+    width: fit-content;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.admin-edit-btn {
+    background: #EDEBE6;
+    color: #1a1a1a;
+}
+
+.admin-edit-btn:hover {
+    background: #ddd8d0;
+}
+
+.admin-delete-btn {
+    background: #B31942;
+    color: #fff;
+}
+
+.admin-delete-btn:hover {
+    background: #7d0f2b;
+}
+
+.admin-edit-form {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.admin-edit-form h2 {
+    margin: 0 0 25px;
+    color: #1a1a1a;
+}
+
+.admin-edit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.admin-edit-form input,
+.admin-edit-form textarea,
+.admin-edit-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+.admin-edit-form input:focus,
+.admin-edit-form textarea:focus,
+.admin-edit-form select:focus {
+    border-color: #B31942;
+}
+
+.admin-edit-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.admin-edit-form button {
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-edit-form button[type="submit"] {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.admin-edit-form button[type="submit"]:hover {
+    background: #B31942;
+}
+
+.admin-edit-form button[type="button"] {
+    background: #EDEBE6;
+    color: #1a1a1a;
+}
+
+.admin-edit-form button[type="button"]:hover {
+    background: #ddd8d0;
+}
+
+@media (max-width: 600px) {
+    .admin-product-card { grid-template-columns: 1fr; }
+    .admin-product-image { width: 100%; height: 220px; grid-row: auto; }
+    .admin-edit-form { padding: 20px; }
+}

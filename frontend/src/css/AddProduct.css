@@ -1,0 +1,45 @@
+.admin-products {
+    width: 100%;
+}
+
+.admin-products-title {
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.admin-products-subtitle {
+    margin: 0 0 25px;
+    color: #666;
+}
+
+.admin-products-header {
+    margin-bottom: 30px;
+}
+
+.admin-products-heading {
+    margin-bottom: 20px;
+}
+
+.admin-add-product-btn {
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+
+    padding: 12px 22px;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.admin-add-product-btn:hover {
+    background: #B31942;
+}
+
+@media (max-width: 600px) {
+    .admin-products-title { font-size: 26px; }
+}
