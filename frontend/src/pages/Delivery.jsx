@@ -19,7 +19,7 @@ const Delivery = () => {
         })
     };
 
-    const handlePlaceOrder = async (e) => {
+    const handleConfirmOrder = async (e) => {
         e.preventDefault();
         try {
             const token = localStorage.getItem('token')
@@ -76,7 +76,7 @@ const Delivery = () => {
                 </p>
                 <form
                     className="delivery-form"
-                    onSubmit={handlePlaceOrder}
+                    onSubmit={handleConfirmOrder}
                 >
                     <label htmlFor="name">Name</label>
                     <input
