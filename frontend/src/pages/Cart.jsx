@@ -75,15 +75,7 @@ const Cart = () => {
     }
 
     const handlePlaceOrder = () => {
-
-        const token = localStorage.getItem("token");
-
-        if (token) {
             navigate("/delivery");
-        } else {
-            navigate("/login");
-        }
-
     };
 
     return (
