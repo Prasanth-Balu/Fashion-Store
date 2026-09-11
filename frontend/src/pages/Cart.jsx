@@ -87,7 +87,7 @@ const Cart = () => {
                         {cartItems.map((item) => (
                             <div className="cart-item" key={item.product}>
                                 <div className="cart-item-image">
-                                    <img src={`http://localhost:5000/uploads/${item.image}`} alt={item.name} />
+                                    <img src={`https://fashion-store-backend-0yqd.onrender.com/uploads/${item.image}`} alt={item.name} />
                                 </div>
 
                                 <div className="cart-item-info">
