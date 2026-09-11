@@ -14,7 +14,7 @@ const AdminProducts = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/products"
+                "https://fashion-store-backend-0yqd.onrender.com/api/products"
             );
 
             setProducts(response.data.products);
