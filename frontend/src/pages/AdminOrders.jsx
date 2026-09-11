@@ -13,7 +13,7 @@ const AdminOrders = () => {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/orders",
+                "https://fashion-store-backend-0yqd.onrender.com/api/orders",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -38,7 +38,7 @@ const AdminOrders = () => {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http://localhost:5000/api/orders/${id}/status`,
+                `https://fashion-store-backend-0yqd.onrender.com/api/orders/${id}/status`,
                 {
                     status: status
                 },
