@@ -14,7 +14,7 @@ const AdminProductList = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/products"
+                "https://fashion-store-backend-0yqd.onrender.com/api/products"
             );
 
             setProducts(response.data.products);
@@ -35,7 +35,7 @@ const AdminProductList = () => {
             const token = localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:5000/api/products/${id}`,
+                `https://fashion-store-backend-0yqd.onrender.com/api/products/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -63,7 +63,7 @@ const AdminProductList = () => {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http://localhost:5000/api/products/${editProduct._id}`,
+                `https://fashion-store-backend-0yqd.onrender.com/api/products/${editProduct._id}`,
                 {
                     name: editProduct.name,
                     description: editProduct.description,
@@ -121,7 +121,7 @@ const AdminProductList = () => {
                     >
 
                         <img
-                            src={`http://localhost:5000/uploads/${product.image}`}
+                            src={`https://fashion-store-backend-0yqd.onrender.com/uploads/${product.image}`}
                             alt={product.name}
                             className="admin-product-image"
                         />
