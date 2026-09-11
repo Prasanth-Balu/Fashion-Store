@@ -42,7 +42,7 @@ const Delivery = () => {
                 price: item.price
             }))
 
-            const response = await axios.post("http://localhost:5000/api/orders",
+            const response = await axios.post("https://fashion-store-backend-0yqd.onrender.com/api/orders",
                 {
                     items,
                     deliveryAddress
