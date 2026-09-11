@@ -42,7 +42,7 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+                const response = await axios.get(`https://fashion-store-backend-0yqd.onrender.com/api/products/${id}`);
                 setProduct(response.data.product);
             } catch (error) {
                 console.log(error)
@@ -67,7 +67,7 @@ const ProductDetails = () => {
             <div className="product-details-container">
                 <div className="product-details-image">
                     <img
-                        src={`http://localhost:5000/uploads/${product.image}`}
+                        src={`https://fashion-store-backend-0yqd.onrender.com/uploads/${product.image}`}
                         alt={product.name}
                     />
                 </div>
