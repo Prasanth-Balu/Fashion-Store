@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
     return (
         <div className="product-card">
             <div className="product-image">
-                <img src={`http://localhost:5000/uploads/${product.image}`} alt={product.name} />
+                <img src={`https://fashion-store-backend-0yqd.onrender.com/uploads/${product.image}`} alt={product.name} />
             </div>
             <div className="product-info">
                 <h3>{product.name}</h3>
